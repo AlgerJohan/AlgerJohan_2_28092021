@@ -1,0 +1,15 @@
+
+body{
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+    font-family: 'Raleway', sans-serif;
+}
+#blocpage{
+display: flex;
+flex-direction: column;
+ }
+
+ul{
+    list-style-type: none;
+}
