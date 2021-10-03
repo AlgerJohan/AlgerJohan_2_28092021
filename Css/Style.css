@@ -1,15 +1,33 @@
-
-body{
-    box-sizing: border-box; /* Opera/IE 8+ */
-    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-    font-family: 'Raleway', sans-serif;
+body {
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+  font-family: "Raleway", sans-serif;
 }
-#blocpage{
-display: flex;
-flex-direction: column;
- }
-
-ul{
-    list-style-type: none;
+/*Navigation & Logo*/
+.nav-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-1 img {
+  width: 150px;
+  margin-left: 50px;
+}
+.nav-1 ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 50px;
+}
+.nav-1 ul li {
+  font-size: 25px;
+  margin: 0 10px;
+}
+.nav-1 ul li a {
+  color: #0065fc;
+  text-decoration: none;
+}
+.nav-1 ul li a:hover {
+  border-top: solid 4px #0065fc;
+  padding-top: 25px;
 }
