@@ -4,6 +4,10 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
   font-family: "Raleway", sans-serif;
 }
+#container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 /*Navigation & Logo*/
 .nav-1 {
   display: flex;
@@ -12,12 +16,10 @@ body {
 }
 .nav-1 img {
   width: 150px;
-  margin-left: 50px;
 }
 .nav-1 ul {
   list-style-type: none;
   display: flex;
-  margin-right: 50px;
 }
 .nav-1 ul li {
   font-size: 25px;
@@ -30,4 +32,18 @@ body {
 .nav-1 ul li a:hover {
   border-top: solid 4px #0065fc;
   padding-top: 25px;
+}
+.info-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -25px;
+}
+.info-section_2 {
+  display: flex;
+  flex-direction: column;
+}
+#border,
+button {
+  background-color: #0065fc;
+  color: white;
 }
