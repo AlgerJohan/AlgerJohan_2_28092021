@@ -33,6 +33,7 @@ body {
   border-top: solid 4px #0065fc;
   padding-top: 25px;
 }
+/*Info section*/
 .info-section {
   display: flex;
   flex-direction: column;
@@ -42,8 +43,31 @@ body {
   display: flex;
   flex-direction: column;
 }
-#border,
+/*Search*/
+form {
+  display: flex;
+}
+#font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  background-color: #f2f2f2;
+}
+input {
+  width: 244px;
+  height: 40px;
+  border: 0.5px solid #f2f2f2;
+  font-weight: bold;
+}
 button {
+  width: 150px;
+  height: 40px;
   background-color: #0065fc;
-  color: white;
+  color: #f2f2f2;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  border: none;
 }
