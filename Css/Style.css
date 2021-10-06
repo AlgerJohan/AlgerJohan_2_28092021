@@ -75,6 +75,7 @@ button {
 #filter {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 40px;
   gap: 30px;
 }
@@ -114,13 +115,38 @@ button {
   width: 186px;
   height: 41px;
 }
-.fas {
-  color: #0065fc;
-}
+
 .fascolor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #deebff;
   border-radius: 30px;
   width: 46px;
   height: 46px;
   margin-left: -3px;
+  color: #0065fc;
 }
+/*info*/
+#info {
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+.fascolor2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+}
+.info p {
+  padding: 15px;
+}
+/*Card*/
