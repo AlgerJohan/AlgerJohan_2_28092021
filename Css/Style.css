@@ -87,7 +87,7 @@ button {
   align-items: center;
   border: 3px solid #f2f2f2;
   border-radius: 36px;
-  width: 150px;
+  width: 186px;
   height: 41px;
 }
 .fam {
@@ -95,7 +95,7 @@ button {
   align-items: center;
   border: 3px solid #f2f2f2;
   border-radius: 36px;
-  width: 150px;
+  width: 186px;
   height: 41px;
 }
 .rom {
@@ -103,7 +103,7 @@ button {
   align-items: center;
   border: 3px solid #f2f2f2;
   border-radius: 36px;
-  width: 150px;
+  width: 186px;
   height: 41px;
 }
 .ani {
@@ -111,13 +111,16 @@ button {
   align-items: center;
   border: 3px solid #f2f2f2;
   border-radius: 36px;
-  width: 150px;
+  width: 186px;
   height: 41px;
 }
+.fas {
+  color: #0065fc;
+}
 .fascolor {
-  border: solid 3px red;
+  background-color: #deebff;
   border-radius: 30px;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   margin-left: -3px;
 }
