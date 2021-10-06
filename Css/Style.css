@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-/*Search*/
+/*Formulaire*/
 form {
   display: flex;
 }
@@ -70,4 +70,54 @@ button {
   cursor: pointer;
   border-radius: 0 10px 10px 0;
   border: none;
+}
+/*Filtres*/
+#filter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 30px;
+}
+.fil {
+  display: flex;
+  align-items: center;
+}
+.eco {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 36px;
+  width: 150px;
+  height: 41px;
+}
+.fam {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 36px;
+  width: 150px;
+  height: 41px;
+}
+.rom {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 36px;
+  width: 150px;
+  height: 41px;
+}
+.ani {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 36px;
+  width: 150px;
+  height: 41px;
+}
+.fascolor {
+  border: solid 3px red;
+  border-radius: 30px;
+  width: 42px;
+  height: 42px;
+  margin-left: -3px;
 }
