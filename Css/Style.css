@@ -150,3 +150,20 @@ button {
   padding: 15px;
 }
 /*Card*/
+#left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  width: 70%;
+  height: 600px;
+}
+
+img {
+  width: 150px;
+  height: 88px;
+  border-radius: 10px 10px 0px 0px;
+}
