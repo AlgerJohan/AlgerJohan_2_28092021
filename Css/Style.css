@@ -177,3 +177,13 @@ img {
   padding: 1%;
   border-radius: 10px;
 }
+#marcus,
+#fred,
+#reise {
+  margin-bottom: 10px;
+}
+#annie,
+#nicate,
+#febri {
+  margin-top: 10px;
+}
