@@ -167,3 +167,13 @@ img {
   height: 88px;
   border-radius: 10px 10px 0px 0px;
 }
+#marcus,
+#fred,
+#reise,
+#annie,
+#nicate,
+#febri {
+  background-color: white;
+  padding: 1%;
+  border-radius: 10px;
+}
