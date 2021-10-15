@@ -4,6 +4,10 @@ body {
   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
   font-family: "Raleway", sans-serif;
 }
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 #container {
   margin-left: 50px;
   margin-right: 50px;
@@ -79,19 +83,11 @@ button {
   margin-top: 40px;
   gap: 30px;
 }
-.fil {
+.filtre {
   display: flex;
   align-items: center;
 }
-.eco {
-  display: flex;
-  align-items: center;
-  border: 3px solid #f2f2f2;
-  border-radius: 36px;
-  width: 186px;
-  height: 41px;
-}
-.fam {
+.economique {
   display: flex;
   align-items: center;
   border: 3px solid #f2f2f2;
@@ -99,7 +95,7 @@ button {
   width: 186px;
   height: 41px;
 }
-.rom {
+.familial {
   display: flex;
   align-items: center;
   border: 3px solid #f2f2f2;
@@ -107,7 +103,15 @@ button {
   width: 186px;
   height: 41px;
 }
-.ani {
+.romantique {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f2f2f2;
+  border-radius: 36px;
+  width: 186px;
+  height: 41px;
+}
+.animaux {
   display: flex;
   align-items: center;
   border: 3px solid #f2f2f2;
@@ -150,7 +154,18 @@ button {
   padding: 15px;
 }
 /*Card*/
-#left {
+.titre {
+  width: 20%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 600px;
+  justify-content: space-evenly;
+}
+/*#container2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -160,30 +175,20 @@ button {
   border-radius: 10px;
   width: 70%;
   height: 600px;
-}
+}*/
 
 img {
   width: 150px;
   height: 88px;
   border-radius: 10px 10px 0px 0px;
 }
-#marcus,
-#fred,
-#reise,
-#annie,
-#nicate,
-#febri {
+/*#lacannebière,
+#leport,
+#lesmouettes,
+#lamer,
+#lepanier,
+#chezamina {
   background-color: white;
   padding: 1%;
   border-radius: 10px;
-}
-#marcus,
-#fred,
-#reise {
-  margin-bottom: 10px;
-}
-#annie,
-#nicate,
-#febri {
-  margin-top: 10px;
-}
+}*/
