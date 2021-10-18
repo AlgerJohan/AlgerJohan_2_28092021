@@ -1,3 +1,7 @@
+#hebergement article {
+  border: 1px solid red;
+}
+
 body {
   box-sizing: border-box; /* Opera/IE 8+ */
   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
@@ -12,9 +16,10 @@ header {
   margin-left: 50px;
   margin-right: 50px;
 }
-/*Navigation & Logo*/
+/*********************Navigation & Logo*********************/
 .nav-1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -37,7 +42,7 @@ header {
   border-top: solid 4px #0065fc;
   padding-top: 25px;
 }
-/*Info section*/
+/**********************Info section**********************/
 .info-section {
   display: flex;
   flex-direction: column;
@@ -47,79 +52,66 @@ header {
   display: flex;
   flex-direction: column;
 }
-/*Formulaire*/
+/************************Formulaire*********************/
 form {
   display: flex;
+  width: 400px;
+  border-radius: 10px;
 }
-#font {
+#icone,
+input,
+button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px 0 0 10px;
+  justify-content: center;
+}
+#icone {
   background-color: #f2f2f2;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 0 0 10px;
 }
 input {
-  width: 244px;
-  height: 40px;
-  border: 0.5px solid #f2f2f2;
+  width: 230px;
+  height: 50px;
+  font-size: 18px;
+  color: black;
   font-weight: bold;
+  border: none;
+  padding-left: 20px;
+  border: 0.5px solid #f2f2f2;
 }
 button {
-  width: 150px;
-  height: 40px;
   background-color: #0065fc;
-  color: #f2f2f2;
+  color: white;
+  width: 120px;
+  height: 50px;
   cursor: pointer;
   border-radius: 0 10px 10px 0;
   border: none;
 }
-/*Filtres*/
-#filter {
+/**********************Filtres***************************/
+#filtres {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 40px;
   gap: 30px;
 }
+.filtre22 {
+  display: flex;
+  align-items: center;
+}
+
 .filtre {
   display: flex;
   align-items: center;
-}
-.economique {
-  display: flex;
-  align-items: center;
   border: 3px solid #f2f2f2;
   border-radius: 36px;
   width: 186px;
   height: 41px;
 }
-.familial {
-  display: flex;
-  align-items: center;
-  border: 3px solid #f2f2f2;
-  border-radius: 36px;
-  width: 186px;
-  height: 41px;
-}
-.romantique {
-  display: flex;
-  align-items: center;
-  border: 3px solid #f2f2f2;
-  border-radius: 36px;
-  width: 186px;
-  height: 41px;
-}
-.animaux {
-  display: flex;
-  align-items: center;
-  border: 3px solid #f2f2f2;
-  border-radius: 36px;
-  width: 186px;
-  height: 41px;
-}
-
+#filtres i,
 .fascolor {
   display: flex;
   align-items: center;
@@ -131,7 +123,7 @@ button {
   margin-left: -3px;
   color: #0065fc;
 }
-/*info*/
+/****************info*********************/
 #info {
   display: flex;
   flex-direction: row;
@@ -153,42 +145,54 @@ button {
 .info p {
   padding: 15px;
 }
-/*Card*/
+/******************Card*************************/
+#card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#card img {
+  width: 150px;
+  height: 104px;
+  border-radius: 10px 10px 0 0;
+}
+#hebergement {
+  display: flex;
+}
 .titre {
-  width: 20%;
+  margin-left: 45px;
 }
 .left {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 40%;
-  height: 600px;
-  justify-content: space-evenly;
-}
-/*#container2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
+  width: 29%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
   background-color: #f2f2f2;
-  border-radius: 10px;
-  width: 70%;
-  height: 600px;
-}*/
-
-img {
-  width: 150px;
-  height: 88px;
-  border-radius: 10px 10px 0px 0px;
 }
-/*#lacannebière,
-#leport,
-#lesmouettes,
-#lamer,
-#lepanier,
-#chezamina {
-  background-color: white;
-  padding: 1%;
+.afficher_plus h4 {
+  margin: 50px 0 40px 30px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
-}*/
+  background-color: #f2f2f2;
+  margin-left: 45px;
+}
+#card .right img {
+  border-radius: 10px 0 0 10px;
+}
+.graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*Couleur*/
+.blue {
+  color: blue;
+}
+.gray {
+  color: gray;
+}
