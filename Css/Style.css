@@ -3,7 +3,6 @@ body {
   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
   font-family: "Raleway", sans-serif;
-  margin: 10px 400px;
 }
 header,
 #container {
