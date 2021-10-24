@@ -5,14 +5,12 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 10px 400px;
 }
-header {
-  margin-left: 50px;
-  margin-right: 50px;
-}
+header,
 #container {
   margin-left: 50px;
   margin-right: 50px;
 }
+
 /*********************Navigation & Logo*********************/
 .nav-1 {
   display: flex;
@@ -88,7 +86,7 @@ button {
   border: none;
 }
 /**********************Filtres***************************/
-#filtresglobal {
+#filtreGlobal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -116,7 +114,7 @@ button {
   align-items: center;
   padding-left: 10px;
 }
-#filtresglobal i {
+#filtreGlobal i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,16 +225,20 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 #activités p {
   font-weight: bold;
   margin-left: 18px;
   font-size: 20px;
 }
-
+#activités h2 {
+  margin-left: 10px;
+}
 #imageActivités {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .vieuxPort,
 #doubleCarte,
@@ -273,4 +275,13 @@ button {
 }
 .notreDameDeLaGarde {
   margin-bottom: 100px;
+}
+/********************************Footer*********************************/
+footer {
+  display: flex;
+  margin-top: 36px;
+  background-color: #f2f2f2;
+}
+footer ul {
+  list-style-type: none;
 }
