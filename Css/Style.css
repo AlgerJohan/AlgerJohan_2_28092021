@@ -29,10 +29,13 @@ header,
   margin: 0 10px;
 }
 .nav-1 ul li a {
-  color: #0065fc;
   text-decoration: none;
+  color: #bdc4c7;
 }
 .nav-1 ul li a:hover {
+  color: #0065fc;
+}
+.nav-1 a:hover {
   border-top: solid 4px #0065fc;
   padding-top: 25px;
 }
@@ -98,6 +101,7 @@ button {
 .titreselection {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .filtre {
@@ -112,6 +116,7 @@ button {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  font-weight: bold;
 }
 #filtreGlobal i {
   display: flex;
@@ -153,7 +158,9 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-/*********************left***********************/
+.texteEtoile {
+  padding-left: 15px;
+}
 .left {
   flex: 2;
   margin-right: 20px;
@@ -170,12 +177,12 @@ button {
 #hebergement article {
   background-color: white;
   border-radius: 10px;
-  padding: 1%;
+  padding: 6px;
   margin-left: 4%;
   margin-bottom: 5%;
 }
 #hebergement img {
-  width: 200px;
+  width: 251px;
   height: 120px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
@@ -207,7 +214,7 @@ button {
   margin-bottom: 20%;
   margin-left: 8%;
   background-color: white;
-  padding: 1%;
+  padding: 6px;
   width: 81%;
   height: 126px;
   border-radius: 10px;
@@ -241,6 +248,16 @@ button {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.fortdepomegue p,
+.ilesDuFrioul p,
+.notreDameDeLaGarde p,
+.parcLongchamp p {
+  height: 40px;
+}
+.vieuxPort p,
+.parcNationnalDesCalanques p {
+  height: 40px;
+}
 .vieuxPort,
 #doubleCarte,
 .parcNationnalDesCalanques {
@@ -256,26 +273,40 @@ button {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.vieuxPort img {
+.vieuxPort img,
+.parcNationnalDesCalanques img {
   height: 534px;
 }
-
+.vieuxPort,
+.parcNationnalDesCalanques {
+  height: 602px;
+}
 .fortdepomegue img {
   height: 214px;
 }
+.fortdepomegue {
+  height: 274px;
+  margin-bottom: 100px;
+}
 .ilesDuFrioul img {
   height: 163px;
-  margin-top: 102px;
-}
-.parcNationnalDesCalanques img {
-  height: 534px;
 }
 .notreDameDeLaGarde img,
 .parcLongchamp img {
   height: 194px;
 }
 .notreDameDeLaGarde {
-  margin-bottom: 100px;
+  margin-bottom: 85px;
+}
+.vieuxPort,
+.fortdepomegue,
+.ilesDuFrioul,
+.parcNationnalDesCalanques,
+.notreDameDeLaGarde,
+.parcLongchamp {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px gray;
 }
 /********************************Footer*********************************/
 footer {
@@ -285,4 +316,7 @@ footer {
 }
 footer ul {
   list-style-type: none;
+}
+footer p {
+  font-weight: bold;
 }
