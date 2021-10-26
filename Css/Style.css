@@ -10,6 +10,7 @@ header,
 #container {
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 10px;
 }
 
 /*********************Navigation & Logo*********************/
@@ -180,7 +181,6 @@ button {
   background-color: white;
   border-radius: 10px;
   padding: 6px;
-  margin-left: 4%;
   margin-bottom: 5%;
 }
 #hebergement img {
@@ -189,9 +189,16 @@ button {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
+#hebergement h3 {
+  margin-top: 10px;
+}
+#hebergement p {
+  margin-top: -8px;
+}
 #hebergement {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 /******************Aside************************/
 .right {
@@ -210,16 +217,23 @@ button {
   border-radius: 10px 0 0 10px;
   object-fit: cover;
 }
+.blocAside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
 .blocAside article {
   display: flex;
   align-items: center;
-  margin-bottom: 20%;
-  margin-left: 8%;
   background-color: white;
   padding: 6px;
   width: 81%;
   height: 126px;
   border-radius: 10px;
+}
+.marge {
+  margin-bottom: 22%;
 }
 .texteAside {
   padding-left: 18px;
