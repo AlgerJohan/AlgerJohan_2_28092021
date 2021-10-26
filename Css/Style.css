@@ -3,16 +3,15 @@ body {
   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
   font-family: "Raleway", sans-serif;
-  margin: 10px 400px;
+  max-width: 1474px;
+  margin: 0 auto;
 }
-header {
-  margin-left: 50px;
-  margin-right: 50px;
-}
+header,
 #container {
   margin-left: 50px;
   margin-right: 50px;
 }
+
 /*********************Navigation & Logo*********************/
 .nav-1 {
   display: flex;
@@ -32,10 +31,13 @@ header {
   margin: 0 10px;
 }
 .nav-1 ul li a {
-  color: #0065fc;
   text-decoration: none;
+  color: #bdc4c7;
 }
 .nav-1 ul li a:hover {
+  color: #0065fc;
+}
+.nav-1 a:hover {
   border-top: solid 4px #0065fc;
   padding-top: 25px;
 }
@@ -88,7 +90,7 @@ button {
   border: none;
 }
 /**********************Filtres***************************/
-#filtresglobal {
+#filtreGlobal {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -101,6 +103,7 @@ button {
 .titreselection {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .filtre {
@@ -115,8 +118,9 @@ button {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  font-weight: bold;
 }
-#filtresglobal i {
+#filtreGlobal i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +160,9 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-/*********************left***********************/
+.texteEtoile {
+  padding-left: 15px;
+}
 .left {
   flex: 2;
   margin-right: 20px;
@@ -173,20 +179,21 @@ button {
 #hebergement article {
   background-color: white;
   border-radius: 10px;
-  padding: 1%;
+  padding: 6px;
   margin-left: 4%;
   margin-bottom: 5%;
 }
 #hebergement img {
-  width: 200px;
+  width: 251px;
   height: 120px;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 #hebergement {
   display: flex;
   flex-wrap: wrap;
 }
-/******************right************************/
+/******************Aside************************/
 .right {
   flex: 1;
   background-color: #f2f2f2;
@@ -201,6 +208,7 @@ button {
   width: 160px;
   height: 120px;
   border-radius: 10px 0 0 10px;
+  object-fit: cover;
 }
 .blocAside article {
   display: flex;
@@ -208,7 +216,7 @@ button {
   margin-bottom: 20%;
   margin-left: 8%;
   background-color: white;
-  padding: 1%;
+  padding: 6px;
   width: 81%;
   height: 126px;
   border-radius: 10px;
@@ -227,16 +235,30 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 60px;
 }
 #activités p {
   font-weight: bold;
   margin-left: 18px;
   font-size: 20px;
 }
-
+#activités h2 {
+  margin-left: 10px;
+}
 #imageActivités {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fortdepomegue p,
+.ilesDuFrioul p,
+.notreDameDeLaGarde p,
+.parcLongchamp p {
+  height: 40px;
+}
+.vieuxPort p,
+.parcNationnalDesCalanques p {
+  height: 40px;
 }
 .vieuxPort,
 #doubleCarte,
@@ -253,24 +275,56 @@ button {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.vieuxPort img {
+.vieuxPort img,
+.parcNationnalDesCalanques img {
   height: 534px;
 }
-
+.vieuxPort,
+.parcNationnalDesCalanques {
+  height: 602px;
+}
 .fortdepomegue img {
   height: 214px;
 }
+.fortdepomegue {
+  height: 274px;
+  margin-bottom: 100px;
+}
 .ilesDuFrioul img {
   height: 163px;
-  margin-top: 102px;
-}
-.parcNationnalDesCalanques img {
-  height: 534px;
 }
 .notreDameDeLaGarde img,
 .parcLongchamp img {
   height: 194px;
 }
 .notreDameDeLaGarde {
-  margin-bottom: 100px;
+  margin-bottom: 85px;
+}
+.vieuxPort,
+.fortdepomegue,
+.ilesDuFrioul,
+.parcNationnalDesCalanques,
+.notreDameDeLaGarde,
+.parcLongchamp {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px gray;
+}
+/********************************Footer*********************************/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  background-color: #f2f2f2;
+}
+footer ul {
+  list-style-type: none;
+}
+footer p {
+  font-weight: bold;
+  margin-left: 41px;
+}
+.apropos,
+.nosHebergements {
+  margin-right: 22%;
 }
