@@ -370,11 +370,27 @@ Responsive Tablette*/
   . nav {
     width: 94%;
   }
+  h1 {
+    font-size: 52px;
+  }
+  #container .size {
+    font-size: 24px;
+  }
+  .info p {
+    font-size: 24px;
+  }
   #filtre_global {
     width: 100%;
   }
   .gauche {
     flex: 1;
+  }
+  .titre {
+    font-size: 52px;
+  }
+  .graphique h2,
+  .fa-chart-line {
+    font-size: 52px;
   }
   #carte {
     flex-direction: column;
@@ -388,6 +404,9 @@ Responsive Tablette*/
   }
   #bloc_activites {
     align-items: center;
+  }
+  #bloc_activites h2 {
+    font-size: 52px;
   }
   #bloc_cube {
     justify-content: center;
@@ -405,6 +424,7 @@ Responsive Tablette*/
   }
   .cube_activites2 {
     margin-bottom: 20px;
+    height: 600px;
   }
   .cube_activites3 img,
   .cube_activites5 img,
