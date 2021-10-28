@@ -3,55 +3,44 @@ body {
   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
   font-family: "Raleway", sans-serif;
-  max-width: 1474px;
+  max-width: 1730px;
   margin: 0 auto;
 }
 header,
 #container {
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 10px;
 }
 
 /*********************Navigation & Logo*********************/
-.nav-1 {
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.nav-1 img {
+nav img {
   width: 150px;
 }
-.nav-1 ul {
+nav ul {
   list-style-type: none;
   display: flex;
 }
-.nav-1 ul li {
+nav ul li {
   font-size: 25px;
   margin: 0 10px;
 }
-.nav-1 ul li a {
+nav ul li a {
   text-decoration: none;
   color: #bdc4c7;
 }
-.nav-1 ul li a:hover {
+nav ul li a:hover {
   color: #0065fc;
 }
-.nav-1 a:hover {
+nav a:hover {
   border-top: solid 4px #0065fc;
   padding-top: 25px;
 }
-/**********************Info section**********************/
-.info-section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: -25px;
-}
-.info-section_2 {
-  display: flex;
-  flex-direction: column;
-}
+
 /************************Formulaire*********************/
 form {
   display: flex;
@@ -91,7 +80,7 @@ button {
   border: none;
 }
 /**********************Filtres***************************/
-#filtreGlobal {
+#filtre_global {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -99,7 +88,7 @@ button {
   margin-top: 40px;
   margin-bottom: 20px;
   justify-content: space-between;
-  width: 78%;
+  width: 60%;
 }
 .titreselection {
   display: flex;
@@ -121,7 +110,7 @@ button {
   padding-left: 10px;
   font-weight: bold;
 }
-#filtreGlobal i {
+#filtre_global i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +131,7 @@ button {
   display: flex;
   align-items: center;
 }
-.fascolor2 {
+.positionnement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,15 +145,15 @@ button {
   padding: 15px;
 }
 
-/******************Card*************************/
-#card {
+/******************Hébergementà Marseille*************************/
+#carte {
   display: flex;
   flex-wrap: wrap;
 }
-.texteEtoile {
+.texte_etoile {
   padding-left: 15px;
 }
-.left {
+.gauche {
   flex: 2;
   margin-right: 20px;
   background-color: #f2f2f2;
@@ -184,7 +173,7 @@ button {
   margin-bottom: 5%;
 }
 #hebergement img {
-  width: 251px;
+  width: 274px;
   height: 120px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
@@ -201,7 +190,7 @@ button {
   justify-content: space-around;
 }
 /******************Aside************************/
-.right {
+.droite {
   flex: 1;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -211,19 +200,19 @@ button {
   align-items: center;
   justify-content: space-around;
 }
-.imageAside img {
+.image_aside img {
   width: 160px;
   height: 120px;
   border-radius: 10px 0 0 10px;
   object-fit: cover;
 }
-.blocAside {
+.bloc_aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
 }
-.blocAside article {
+.bloc_aside article {
   display: flex;
   align-items: center;
   background-color: white;
@@ -233,9 +222,9 @@ button {
   border-radius: 10px;
 }
 .marge {
-  margin-bottom: 22%;
+  margin-bottom: 18%;
 }
-.texteAside {
+.texte_aside {
   padding-left: 18px;
 }
 .blue {
@@ -245,81 +234,77 @@ button {
   color: #bdc4c7;
 }
 /***********************Activités à Marseille******************************/
-#activités {
+#bloc_activites {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 60px;
 }
-#activités p {
+#bloc_activites p {
   font-weight: bold;
   margin-left: 18px;
   font-size: 20px;
 }
-#activités h2 {
+#bloc_activites h2 {
   margin-left: 10px;
 }
-#imageActivités {
+#bloc_image {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.fortdepomegue p,
-.ilesDuFrioul p,
-.notreDameDeLaGarde p,
-.parcLongchamp p {
+.fort_pomegue p,
+.iles_frioul p,
+.notre_dame_lagarde p,
+.parc_longchamp p {
   height: 40px;
 }
-.vieuxPort p,
-.parcNationnalDesCalanques p {
+.vieux_port p,
+.parc_nationnal_calanques p {
   height: 40px;
 }
-.vieuxPort,
-#doubleCarte,
-.parcNationnalDesCalanques {
-  margin-right: 55px;
-}
-.vieuxPort img,
-.fortdepomegue img,
-.ilesDuFrioul img,
-.parcNationnalDesCalanques img,
-.notreDameDeLaGarde img,
-.parcLongchamp img {
-  width: 302px;
+
+.vieux_port img,
+.fort_pomegue img,
+.iles_frioul img,
+.parc_nationnal_calanques img,
+.notre_dame_lagarde img,
+.parc_longchamp img {
+  width: 394px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-.vieuxPort img,
-.parcNationnalDesCalanques img {
+.vieux_port img,
+.parc_nationnal_calanques img {
   height: 534px;
 }
-.vieuxPort,
-.parcNationnalDesCalanques {
+.vieux_port,
+.parc_nationnal_calanques {
   height: 602px;
 }
-.fortdepomegue img {
+.fort_pomegue img {
   height: 214px;
 }
-.fortdepomegue {
+.fort_pomegue {
   height: 274px;
   margin-bottom: 100px;
 }
-.ilesDuFrioul img {
+.iles_frioul img {
   height: 163px;
 }
-.notreDameDeLaGarde img,
-.parcLongchamp img {
+.notre_dame_lagarde img,
+.parc_longchamp img {
   height: 194px;
 }
-.notreDameDeLaGarde {
+.notre_dame_lagarde {
   margin-bottom: 85px;
 }
-.vieuxPort,
-.fortdepomegue,
-.ilesDuFrioul,
-.parcNationnalDesCalanques,
-.notreDameDeLaGarde,
-.parcLongchamp {
+.vieux_port,
+.fort_pomegue,
+.iles_frioul,
+.parc_nationnal_calanques,
+.notre_dame_lagarde,
+.parc_longchamp {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 1px 5px 0px gray;
@@ -339,6 +324,6 @@ footer p {
   margin-left: 41px;
 }
 .apropos,
-.nosHebergements {
+.nos_hebergements {
   margin-right: 22%;
 }

@@ -22,7 +22,7 @@
   <body>
     <!-- Navigation -->
     <header>
-      <nav class="nav-1">
+      <nav>
         <img src="./img/logo/Booki.png" alt="Logo" />
         <ul>
           <li><a href="#hebergements_marseille">Hébergements</a></li>
@@ -32,12 +32,8 @@
     </header>
     <!-- Info-Section -->
     <main id="container">
-      <div class="info-section">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-      </div>
-      <div class="info-section_2">
-        <p>En plein centre ville ou en pleine nature</p>
-      </div>
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
       <!-- Formulaire -->
       <form>
         <div id="icone"><i class="fas fa-map-marker-alt"></i></div>
@@ -50,7 +46,7 @@
         <button>Rechercher</button>
       </form>
       <!-- Filtres -->
-      <div id="filtreGlobal">
+      <div id="filtre_global">
         <div class="titreselection"><p>Filtres</p></div>
         <div class="filtre">
           <i class="fas fa-money-bill-wave"></i>
@@ -72,14 +68,16 @@
       <!-- Info -->
       <div id="info">
         <div class="info">
-          <i class="fas fa-info fascolor2"></i>
+          <i class="fas fa-info positionnement"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
-      <!-- Card -->
-      <section id="card">
-        <div class="left">
-          <h2 class="titre">Hébergements à Marseille</h2>
+      <!-- Hébergement à Marseille -->
+      <section id="carte">
+        <div class="gauche">
+          <h2 class="titre" id="hebergements_marseille">
+            Hébergements à Marseille
+          </h2>
           <div id="hebergement">
             <article>
               <img
@@ -87,7 +85,7 @@
                 alt="Auberge la Cannebière"
                 title="Auberge la Cannebière"
               />
-              <div class="texteEtoile">
+              <div class="texte_etoile">
                 <h3>Auberge La cannebière</h3>
                 <p>Nuit à partir de 25<strong>€</strong></p>
                 <p>
@@ -105,7 +103,7 @@
                 alt="Hôtel du port"
                 title="Hôtel du port"
               />
-              <div class="texteEtoile">
+              <div class="texte_etoile">
                 <h3>Hôtel du port</h3>
                 <p>Nuit à partir de 52<strong>€</strong></p>
                 <p>
@@ -123,7 +121,7 @@
                 alt="Hôtel les mouettes"
                 title="Hôtel les mouettes"
               />
-              <div class="texteEtoile">
+              <div class="texte_etoile">
                 <h3>Hôtel Les mouettes</h3>
                 <p>Nuit à partir de 76<strong>€</strong></p>
                 <p>
@@ -141,7 +139,7 @@
                 alt="Hôtel de la mer"
                 title="Hôtel de la mer"
               />
-              <div class="texteEtoile">
+              <div class="texte_etoile">
                 <h3>Hôtel de la mer</h3>
                 <p>Nuit à partir de 46<strong>€</strong></p>
                 <p>
@@ -159,7 +157,7 @@
                 alt="Auberge le panier"
                 title="Auberge le panier"
               />
-              <div class="texteEtoile">
+              <div class="texte_etoile">
                 <h3>Auberge Le panier</h3>
                 <p>Nuit à partir de 23<strong>€</strong></p>
                 <p>
@@ -177,7 +175,7 @@
                 alt="Hôtel chez amina"
                 title="Hôtel chez amina"
               />
-              <div class="texteEtoile">
+              <div class="texte_etoile">
                 <h3>Hôtel chez Amina</h3>
                 <p>Nuit à partir de 96<strong>€</strong></p>
                 <p>
@@ -192,22 +190,22 @@
           </div>
           <div class="afficher_plus"><h4>Afficher plus</h4></div>
         </div>
-        <!-- Aside -->
-        <aside class="right">
+        <!-- Aside Hébergementà Marseille -->
+        <aside class="droite">
           <div class="graphique">
             <h2>Les plus Populaires</h2>
             <i class="fas fa-chart-line"></i>
           </div>
-          <div class="blocAside">
+          <div class="bloc_aside">
             <article class="marge">
-              <div class="imageAside">
+              <div class="image_aside">
                 <img
-                  src="./img/hebergements/hôtel_le_soleil-du_matin.jpg"
+                  src="./img/hebergements/hôtel_le_soleil_du_matin.jpg"
                   alt="Hôtel le soleil du matin"
                   title="Hôtel le soleil du matin"
                 />
               </div>
-              <div class="texteAside">
+              <div class="texte_aside">
                 <h3>
                   Hôtel le soleil du <br />
                   matin
@@ -224,14 +222,14 @@
             </article>
 
             <article class="marge">
-              <div class="imageAside">
+              <div class="image_aside">
                 <img
                   src="./img/hebergements/au_coeur_de_l'eau_chambres-d'hôtes.jpg"
                   alt="Au coeur de l'eau chambres d'hôtes"
                   title="Au coeur de l'eau chambres d'hôtes"
                 />
               </div>
-              <div class="texteAside">
+              <div class="texte_aside">
                 <h3>
                   Au coeur de l'eau <br />
                   chambres d'hôtes
@@ -248,14 +246,14 @@
             </article>
 
             <article>
-              <div class="imageAside">
+              <div class="image_aside">
                 <img
                   src="./img/hebergements/hôtel_tout_bleu_et_blanc.jpg"
                   alt="Hôtel tout bleu et blanc"
                   title="Hôtel tout bleu et blanc"
                 />
               </div>
-              <div class="texteAside">
+              <div class="texte_aside">
                 <h3>
                   Hôtel tout bleu et <br />
                   blanc
@@ -274,11 +272,10 @@
         </aside>
       </section>
       <!-- Activités à Marseille -->
-      <section id="activités">
-        <h2>Activités à Marseille</h2>
-
-        <div id="imageActivités">
-          <div class="vieuxPort">
+      <section id="bloc_activites">
+        <h2 id="activites_marseille">Activités à Marseille</h2>
+        <div id="bloc_image">
+          <div class="vieux_port">
             <img
               src="./img/activites/vieux_port.jpg"
               alt="Vieux port"
@@ -287,8 +284,8 @@
             <p>Vieux port</p>
           </div>
 
-          <div id="doubleCarte">
-            <div class="fortdepomegue">
+          <div>
+            <div class="fort_pomegue">
               <img
                 src="./img/activites/fort_de_pomègues.jpg"
                 alt="Fort de Pomègues"
@@ -296,7 +293,7 @@
               />
               <p>Fort de Pomègues</p>
             </div>
-            <div class="ilesDuFrioul">
+            <div class="iles_frioul">
               <img
                 src="./img/activites/îles_du_frioul.jpg"
                 alt="Îles du Frioul"
@@ -305,7 +302,7 @@
               <p>Îles du Frioul</p>
             </div>
           </div>
-          <div class="parcNationnalDesCalanques">
+          <div class="parc_nationnal_calanques">
             <img
               src="./img/activites/parc_national_des_calanques.jpg"
               alt="Parc national des Calanques"
@@ -313,8 +310,8 @@
             />
             <p>Parc national des Calanques</p>
           </div>
-          <div id="doubleCarte2">
-            <div class="notreDameDeLaGarde">
+          <div>
+            <div class="notre_dame_lagarde">
               <img
                 src="./img/activites/notre_dame_de_la_garde.jpg"
                 alt="Notre dame de la garde"
@@ -322,7 +319,7 @@
               />
               <p>Notre-Dame-de-la-Garde</p>
             </div>
-            <div class="parcLongchamp">
+            <div class="parc_longchamp">
               <img
                 src="./img/activites/parc_longchamp.jpg"
                 alt="Parc Longchamp"
@@ -344,7 +341,7 @@
           <li>Données et confidentialité</li>
         </ul>
       </div>
-      <div class="nosHebergements">
+      <div class="nos_hebergements">
         <p>Nos hébergements</p>
         <ul>
           <li>Charte qualité</li>
