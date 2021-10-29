@@ -244,6 +244,8 @@ Aside */
 }
 .marge {
   margin-bottom: 18%;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px gray;
 }
 .texte_aside {
   padding-left: 18px;
@@ -439,5 +441,86 @@ Responsive Tablette*/
   }
   .cube_activites5 {
     margin-bottom: 10px;
+  }
+}
+/* 
+Responsive Smartphone
+*/
+@media screen and (max-width: 400px) {
+  #all {
+    overflow-x: hidden;
+  }
+  nav {
+    justify-content: center;
+  }
+  nav ul {
+    margin-right: 20%;
+  }
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  #container .size {
+    font-size: 19px;
+    text-align: center;
+  }
+  .info p {
+    font-size: 15px;
+  }
+  .titre {
+    font-size: 19px;
+    margin-left: 26px;
+  }
+  .graphique h2,
+  .fa-chart-line {
+    font-size: 22px;
+  }
+  .texte_aside h3,
+  p,
+  taille_etoile {
+    font-size: 12px;
+  }
+  .gauche {
+    background-color: white;
+  }
+  .gauche article {
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 0px gray;
+  }
+  .marge {
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 0px gray;
+    margin-bottom: 4%;
+  }
+  .bloc_aside {
+    height: 482px;
+  }
+  #bloc_activites {
+    align-items: flex-start;
+  }
+  #bloc_activites h2 {
+    font-size: 21px;
+    margin-left: 32px;
+  }
+  .cube_activites img,
+  .cube_activites2 img,
+  .cube_activites3 img,
+  .cube_activites4 img,
+  .cube_activites5 img,
+  .cube_activites6 img {
+    width: 296px;
+  }
+  .cube_activites img,
+  .cube_activites2 img,
+  .cube_activites3 img,
+  .cube_activites4 img,
+  .cube_activites5 img,
+  .cube_activites6 img {
+    height: 124px;
+  }
+  .cube_activites4,
+  .cube_activites2,
+  .cube_activites {
+    height: 193px;
   }
 }
