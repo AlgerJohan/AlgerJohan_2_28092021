@@ -44,16 +44,19 @@
             id="maRecherche"
             name="q"
           />
-          <button>Rechercher</button>
+          <button>
+            <span class="mobile_none">Rechercher</span>
+            <span><i class="fas fa-search"></i></span>
+          </button>
         </form>
         <!-- Filtres -->
         <div id="filtre_global">
           <div class="titreselection"><p>Filtres</p></div>
-          <div class="filtre">
+          <div class="filtre" id="position_relative">
             <i class="fas fa-money-bill-wave"></i>
             <p>Economique</p>
           </div>
-          <div class="filtre">
+          <div class="filtre" id="position_absolu">
             <i class="fas fa-child"></i>
             <p>Familial</p>
           </div>
