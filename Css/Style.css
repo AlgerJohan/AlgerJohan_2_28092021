@@ -42,6 +42,9 @@ nav a:hover {
 }
 /* 
 Formulaire */
+.desktop_none {
+  display: none;
+}
 form {
   display: flex;
   width: 400px;
@@ -58,6 +61,7 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 #icone {
   background-color: #f2f2f2;
   width: 50px;
@@ -478,6 +482,12 @@ Responsive Smartphone
     font-size: 26px;
     text-align: center;
   }
+  .desktop_none {
+    display: block;
+  }
+  .mobile_none {
+    display: none;
+  }
   form {
     margin-left: 3%;
   }
@@ -488,9 +498,6 @@ Responsive Smartphone
   }
   input {
     width: 68%;
-  }
-  .mobile_none {
-    display: none;
   }
   #filtre_global {
     display: flex;
