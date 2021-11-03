@@ -105,7 +105,7 @@ Filtres */
 #filtre_global p:hover {
   color: #0065fc;
 }
-.titreselection {
+.titre_selection {
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -137,15 +137,15 @@ Filtres */
 }
 /* 
 info */
-#info {
+#information {
   display: flex;
   flex-direction: row;
 }
-.info {
+.paragraphe {
   display: flex;
   align-items: center;
 }
-.positionnement {
+.paragraphe i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,7 +155,7 @@ info */
   width: 30px;
   height: 30px;
 }
-.info p {
+.paragraphe p {
   padding: 15px;
 }
 /* 
@@ -181,7 +181,8 @@ Hébergementà Marseille */
   border-radius: 10px;
 }
 .titre {
-  margin-left: 40px;
+  margin-left: 67px;
+  margin-top: 34px;
 }
 .afficher_plus {
   margin-left: 40px;
@@ -189,14 +190,15 @@ Hébergementà Marseille */
 }
 #hebergement article {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 24px;
   padding: 6px;
   margin-bottom: 5%;
+  box-shadow: 0px 1px 5px 0px grey;
 }
 #hebergement img {
   width: 274px;
   height: 120px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 17px 17px 0 0;
   object-fit: cover;
 }
 #hebergement h3 {
@@ -208,7 +210,7 @@ Hébergementà Marseille */
 #hebergement {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 /* 
 Aside */
@@ -224,11 +226,12 @@ Aside */
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 34px;
 }
 .image_aside img {
   width: 160px;
   height: 150px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 17px 0 0 17px;
   object-fit: cover;
 }
 .bloc_aside {
@@ -239,21 +242,28 @@ Aside */
 }
 .bloc_aside article {
   display: flex;
-  align-items: center;
   background-color: white;
   padding: 6px;
   width: 70%;
   height: 150px;
-  border-radius: 10px;
+  border-radius: 24px;
 }
-.marge {
-  margin-bottom: 18%;
+.marge_ombre {
+  margin-bottom: 50px;
   border-radius: 10px;
   box-shadow: 0px 1px 5px 0px gray;
 }
 .texte_aside {
-  margin-left: 18px;
   font-size: 15px;
+}
+.texte_aside h3 {
+  margin: 12px 0 0 18px;
+}
+.texte_aside p {
+  margin: 8px 0 0 18px;
+}
+.etoile {
+  margin: 48px 0 0 3px;
 }
 .blue {
   color: #0065fc;
@@ -312,7 +322,7 @@ Activités à Marseille */
 .cube_activites6 img {
   width: 394px;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 24px 24px 0 0;
 }
 .cube_activites img,
 .cube_activites4 img {
@@ -346,7 +356,7 @@ Activités à Marseille */
 .cube_activites5,
 .cube_activites6 {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 24px;
   box-shadow: 0px 1px 5px 0px gray;
 }
 /* 
@@ -371,7 +381,7 @@ footer p {
 /*
 Responsive Tablette
 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body {
     margin: 2px 10px 0 10px;
   }
@@ -406,9 +416,6 @@ Responsive Tablette
   .droite {
     margin-top: 31px;
     width: 100%;
-  }
-  .marge {
-    margin-bottom: 10%;
   }
   .bloc_aside {
     height: 750px;
@@ -447,18 +454,23 @@ Responsive Tablette
   }
   .cube_activites {
     margin-bottom: 20px;
+    width: 100%;
   }
   .cube_activites4 {
     margin-bottom: 20px;
+    width: 100%;
   }
   .cube_activites5 {
     margin-bottom: 10px;
+  }
+  .taille_cube {
+    width: 100%;
   }
 }
 /* 
 Responsive Smartphone
 */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   #all {
     overflow-x: hidden;
   }
@@ -504,7 +516,7 @@ Responsive Smartphone
     align-items: flex-start;
     flex-direction: column;
   }
-  .titreselection {
+  .titre_selection {
     margin-left: 12px;
   }
   .filtre {
@@ -534,12 +546,6 @@ Responsive Smartphone
   .fa-chart-line {
     font-size: 22px;
   }
-  .texte_aside h3,
-  p,
-  .taille_etoile {
-    font-size: 12px;
-  }
-
   .bloc_aside article {
     width: 88%;
   }
@@ -556,6 +562,7 @@ Responsive Smartphone
   }
   #hebergement img {
     width: 100%;
+    height: 240px;
   }
   .afficher_plus {
     margin-left: 10px;
