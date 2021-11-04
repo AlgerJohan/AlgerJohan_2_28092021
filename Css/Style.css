@@ -261,7 +261,7 @@ Aside */
   box-shadow: 0px 1px 5px 0px gray;
 }
 .texte_aside {
-  font-size: 15px;
+  font-size: 13px;
 }
 .texte_aside h3 {
   margin: 12px 0 0 18px;
@@ -548,7 +548,7 @@ Responsive Smartphone
     margin-right: 15px;
   }
   .marge_filtre2 {
-    margin-right: 43%;
+    margin-right: 31%;
   }
   .titre_selection {
     padding-right: 75%;
@@ -561,7 +561,8 @@ Responsive Smartphone
     margin-left: 29px;
   }
   .paragraphe i {
-    width: 5%;
+    width: 70px;
+    height: 54px;
   }
   .paragraphe p {
     font-size: 33px;
@@ -676,7 +677,8 @@ Responsive Iphone
     font-size: 13px;
   }
   .paragraphe i {
-    width: 10%;
+    width: 48px;
+    height: 38px;
   }
   /*Hébergement à Marseille*/
   #hebergement img {
