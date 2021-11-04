@@ -542,6 +542,9 @@ Responsive Smartphone
   .paragraphe {
     margin-left: 29px;
   }
+  .paragraphe i {
+    width: 5%;
+  }
   .paragraphe p {
     font-size: 33px;
   }
@@ -657,6 +660,9 @@ Responsive Iphone
   /*Info*/
   .paragraphe p {
     font-size: 13px;
+  }
+  .paragraphe i {
+    width: 10%;
   }
   /*Hébergement à Marseille*/
   #hebergement img {
