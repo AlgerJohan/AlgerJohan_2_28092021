@@ -94,6 +94,12 @@ Filtres */
   margin-bottom: 20px;
   width: 60%;
 }
+.flexsmartphone {
+  display: flex;
+}
+.marge_filtre {
+  margin-right: 40px;
+}
 .placement_filtre {
   display: flex;
   justify-content: space-between;
@@ -401,6 +407,12 @@ Responsive Tablette
   #filtre_global {
     width: 100%;
   }
+  .flexsmartphone {
+    display: flex;
+  }
+  .marge_filtre {
+    margin-right: 15px;
+  }
   /*Hébergement à Marseille*/
   .gauche {
     width: 100%;
@@ -529,6 +541,12 @@ Responsive Smartphone
   #filtre_global {
     margin-left: 29px;
   }
+  .flexsmartphone {
+    display: flex;
+  }
+  .marge_filtre {
+    margin-right: 15px;
+  }
   .marge_filtre2 {
     margin-right: 43%;
   }
@@ -641,21 +659,17 @@ Responsive Iphone
     margin-left: 13px;
   }
   /*Filtres*/
+  .flexsmartphone {
+    display: flex;
+  }
   .marge_filtre {
-    position: relative;
-    width: 44%;
+    margin-right: 15px;
   }
   .taille_filtre {
     width: 44%;
   }
   .taille_filtre2 {
     width: 56%;
-  }
-  .position {
-    position: absolute;
-    top: 61%;
-    left: 58%;
-    width: 32%;
   }
   /*Info*/
   .paragraphe p {
